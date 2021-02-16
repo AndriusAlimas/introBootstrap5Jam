@@ -6,22 +6,76 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <title>Intro Boostrap 5 From Coders Guild</title>
-
+    <title>My City Wakefield</title>
+    <style>
+        h5, p{
+          font-family: 'Rock Salt', cursive;
+          color: white;
+          text-shadow: 2px 2px 4px black;
+          text-transform: uppercase;
+          word-spacing: 0.6em;
+        }
+   
+    </style>
   </head>
 
   <body>
-   <div class="container-fluid">
-       
       <!-- My Navigation Bar -->
       <nav class="navbar">
         <div class="container">
-          <span class="navbar-brand" style="font-size: 3rem;">Rolling Stones</span>
+          <span class="navbar-brand" style="font-size: 3rem;">Wakefield</span>
         </div>
       </nav>
+
           <!-- Main Container -->
       <main class="container-fluid">
         <!-- Carousel -->
+        <div id="myCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="./img/Wakefield-Eng.jpg" class="d-block w-100" alt="Wakefield">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Wakefield City</h5>
+                <p>Photo made by: David Johnston.</p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="./img/SandalCastle.jpg" class="d-block w-100" alt="Wakefield Sandal Castle">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Wakefield Sandal Castle</h5>
+                <p>Photo made by: Andrew Cotter's .</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./img/Wakefield-Cathedral-cc-Mike-Kirby.jpg" class="d-block w-100" alt="Wakefield Cathedral">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Wakefield Cathedral</h5>
+                <p>Photo made by: Mike Kirby </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./img/Queen Victoria Statue.jpg" class="d-block w-100" alt="Wakefield Queen Victoria Statue">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Wakefield Queen Victoria Statue</h5>
+                <p>Photo made by: Freda Park's </p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel"  data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#myCarousel"  data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
      </main>
      <!-- SideBar information about the band  -->
      <sidebar >
@@ -31,7 +85,7 @@
     <footer>
      <p>© Created by Andrius Alimas 2021</p> 
      </footer>
-   </div> 
+   
   
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
