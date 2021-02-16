@@ -15,7 +15,12 @@
           text-transform: uppercase;
           word-spacing: 0.6em;
         }
-   
+        .myPara{
+          font-size: 0.7rem; 
+          color: black;
+         background-color: bisque; 
+         text-transform: unset;
+        }
     </style>
   </head>
 
@@ -79,9 +84,9 @@
       </header>
 
       <!-- Main Container -->
-      <main class="container">
-        <div class="row mt-4 mb-4">
-          <div class="col-md-6">
+      <main class="container-fluid row mt-4 mb-4">
+          <!-- SideBar information about the Wakefield Events -->
+          <sidebar class="col-md-6">
             <h3>Events</h3>
             <ul>
               <li>Step Inside The 60s <span class="text-success p-4">Sat, 27 Feb, 00:00–23:59</span></li>
@@ -90,28 +95,31 @@
               <li>Virtual Open Event <span class="text-success p-4">Wed, 24 Feb, 17:00–19:00</span></li> 
               <li>Long Division Festival <span class="text-success p-4">Sat, 25 Sept, 19:00–23:00</span></li> 
             </ul>
+
             <h3>About Wakefield</h3>
-            <p style="font-size: 0.7rem; color: black; background-color: bisque; text-transform: unset;">Wakefield is a cathedral city in the City of Wakefield District of West Yorkshire, England, on the River Calder and the eastern edge of the Pennines, which had a population of 99,251 at the 2011 census.[1]
-
-              The Battle of Wakefield took place in the Wars of the Roses and it was a Royalist stronghold in the Civil War. Wakefield became an important market town and centre for wool, exploiting its position on the navigable River Calder to become an inland port.</p>
-          </div>
-          <div class="col-md-6">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/loVSPRvTMw8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-         
+            <p class="myPara">
+              Wakefield is a cathedral city in the City of Wakefield District of West Yorkshire, England,
+              on the River Calder and the eastern edge of the Pennines, which had a
+              population of 99,251 at the 2011 census. </p>
+              <p class="myPara">
+                The Battle of Wakefield took place in the Wars of the Roses and it
+                 was a Royalist stronghold in the Civil War. Wakefield became an
+                 important market town and centre for wool, exploiting its position on the navigable River Calder to become an inland port.
+              </p>
+        </sidebar>
+        
+          <!-- here is right side youtube embeded video about wakefield -->
+        <div class="col-md-6">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/loVSPRvTMw8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-      </main>
-     <!-- SideBar information about the band  -->
-     <sidebar >
 
-    </sidebar>
-
+      </main> <!-- ending main container -->
+   
+      <!-- my footer section -->
     <footer>
      <p style="text-align: center;">© Created by Andrius Alimas 2021</p> 
      </footer>
-   
   
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
   </body>
 </html>
